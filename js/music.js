@@ -6,11 +6,6 @@ let iframe = document.createElement('div');
 iframe.id = 'music_player';
 document.body.appendChild(iframe);
 
-// 2. This code loads the IFrame Player API code asynchronously.
-let tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 Array.prototype.shuffler = function () {
     for (let i = this.length - 1; i > 0; i--) {
