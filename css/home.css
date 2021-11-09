@@ -184,7 +184,7 @@ svg.sgmlogo {
 #footer-controls{
     position: absolute;
     bottom:0;
-    right: 10px;
+    /* right: 10px; */
     width: 100%;
     z-index:20;
     display: flex;
@@ -293,6 +293,107 @@ svg.sgmlogo {
     }
 }
 
+
+
+/* .music-control#previous, .music-control#next {
+    margin-right: 0px;
+} */
+
+#index_player {
+    margin-right: 10px;
+    /* margin-left: 10px; */
+}
+
+
+.modal-player {
+    display: none;
+    position: absolute;
+    width: 400px;
+    bottom: 100%;
+    right: 0;
+    padding: 20px;
+    background-color: #3aa0bfd8;
+    border-radius: 5px;
+}
+
+.player-content {
+    position: relative;
+    width: 100%;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+
+#index_player {
+    width: 15%;
+}
+
+#title_player {
+    width: 85%;
+}
+
+
+.player-control-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-buttons i {
+    font-size: 30px;
+}
+
+.player-control-volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#volume-btn{
+    margin-right: 0px !important;
+}
+
+.player-controll-progressbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-controll-progressbar #time_now_player, .player-controll-progressbar #time_total_player {
+    width: 15%;
+}
+
+.player-controll-progressbar #progressbar_player{
+    -webkit-appearance: none;
+    width: 70%;
+    height: 5px;
+    background: #d3d3d3;
+}
+
+#progressbar_player::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 5px;
+    background: #000000;
+    cursor: pointer;
+}
+  
+#progressbar_player::-moz-range-thumb {
+    width: 5px;
+    height: 5px;
+    background: #000000;
+    cursor: pointer;
+}
+
+
+
 @media screen and (max-width: 480px) {
     .hi-icon {				
         margin: 10px 3px;
@@ -316,14 +417,33 @@ svg.sgmlogo {
     #mcd {
         display: none !important;
     }
+
+    .modal-player {
+        width: calc(100% - 20px);
+        padding: 10px;
+        right: 0;
+    }
+
+    .player-content {
+        /* padding: 10px; */
+    }
+
+    #index_player {
+        width: 15%;
+    }
+    
+    #title_player {
+        width: 85%;
+    }
+
+    .player-controll-progressbar #time_now_player, .player-controll-progressbar #time_total_player {
+        width: 20%;
+    }
+    
+    .player-controll-progressbar #progressbar_player{
+        width: 60%;
+    }
 }
 
 
-#index_player {
-    margin-right: 10px;
-    /* margin-left: 10px; */
-}
 
-.music-control#previous, .music-control#next {
-    margin-right: 0px;
-}
