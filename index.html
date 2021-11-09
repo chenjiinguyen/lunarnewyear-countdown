@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF8">
+	<title>Đón Tết Cùng ITRUM</title>
+	<meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport' />
+	<meta name="theme-color" content="#880043">
+	<link rel="shortcut icon" href="https://itrum.org/logo.png" />
+	<link
+		href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic&amp;subset=latin,vietnamese'
+		rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700|Open+Sans:800' rel='stylesheet'
+		type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
+	<link href='http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet' />
+	<link href="./css/fireworks.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link href="./css/soon.min.css" rel="stylesheet" />
+	<link href="./lib/animate.css" rel="stylesheet" />
+	<link href="./css/home.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="content-logo-wrap">
+		<div class="content-logo">
+			<svg class="sgmlogo" viewBox="0 0 1100 300">
+				<!-- Symbol -->
+				<symbol id="s-text">
+					<text text-anchor="middle" x="50%" y="50%" dy=".35em">
+						ITRUM
+					</text>
+				</symbol>
+
+				<!-- Duplicate symbols -->
+				<use xlink:href="#s-text" class="text"></use>
+				<use xlink:href="#s-text" class="text"></use>
+				<use xlink:href="#s-text" class="text"></use>
+				<use xlink:href="#s-text" class="text"></use>
+				<use xlink:href="#s-text" class="text"></use>
+			</svg>
+		</div>
+	</div>
+	<div id="container">
+		<!-- Hiding library elements in the DOM is fun -->
+		<aside id="library">
+			<img src="https://lh3.googleusercontent.com/-SJqVqUzXLWI/VouNHyRXgrI/AAAAAAAACds/zgM_5GWaBIA/s0-Ic42/nightsky.png"
+				id="nightsky" />
+			<img src="https://lh3.googleusercontent.com/-c7qitldyp14/VouNH9DY9DI/AAAAAAAACds/BPrXaUP-d2w/s0-Ic42/big-glow.png"
+				id="big-glow" />
+			<img src="https://lh3.googleusercontent.com/-2b4-lPI_YMY/VouNIJXvfeI/AAAAAAAACds/IL_ETBE7kQo/s0-Ic42/small-glow.png"
+				id="small-glow" />
+			<img src="https://lh3.googleusercontent.com/-vU3Oac1_HWU/VouPN8OOc1I/AAAAAAAACec/sHtg7wSdTwU/s0-Ic42/moon.png"
+				alt="" id="moon" style="visibility: hidden;">
+		</aside>
+		<canvas id="canvastext"></canvas>
+
+		<div class="hi-icon-wrap hi-icon-effect-8">
+			<a href="https://www.facebook.com/groups/itrum/" target="_blank" class="hi-icon hi-icon-groups">Group
+				ITRUM</a>
+			<a href="https://itrum.org/categories/tin-tuc.115/" target="_blank" class="hi-icon hi-icon-news">Tin Tức</a>
+			<div id="home-button">
+				<a href="https://itrum.org/" target="_blank" class="homepage-btn">ITRUM</a>
+			</div>
+			<a href="https://itrum.org/categories/kien-thuc-it.38/" target="_blank" class="hi-icon hi-icon-share">Thủ
+				Thuật</a>
+			<a href="https://itrum.org/categories/tai-lieu.91/" target="_blank" class="hi-icon hi-icon-file">Tài
+				Liệu</a>
+		</div>
+
+		<div id="count-down-wrapper">
+			<div class="SLToday"></div>
+			<div class="soon" id="soon-glow" data-layout="group overlap" data-face="slot doctor glow"
+				data-padding="false" data-scale-max="l"
+				data-visual="ring color-light width-thin glow-progress length-70 gap-0 offset-65"
+				data-labels-days="Ngày,Ngày" data-labels-hours="Giờ,Giờ" data-labels-minutes="Phút,Phút"
+				data-labels-seconds="Giây,Giây" data-due="2022-02-01T00:00:00">
+			</div>
+		</div>
+	</div>
+	<div id="footer-controls">
+		<a href="https://www.youtube.com/c/ITRUMChannel" target="_blank" class="yt"><i
+				class="fa fa-youtube-square"></i></a>
+		<a href="https://fb.me/itrumdotorg" target="_blank" class="fb"><i class="fa fa-facebook-official"></i></a>
+		
+		<a href="javascript:void(0);" class="music-control" id="previous"><i class="fa fa-arrow-circle-left"></i></a>
+		<a href="javascript:void(0);" id="control-player" class="music-control"><span id="index_player"></span>
+			<marquee id="title_player" width="100"> </marquee>
+		</a>
+		<a href="javascript:void(0);" class="music-control" id="next"><i class="fa fa-arrow-circle-right"></i></a>
+		<div style="clear:both;" />
+	</div>
+</body>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'></script>
+<script src="./lib/soundjs-0.6.2.min.js"></script>
+<script src="./js/requestanimframe.js"></script>
+<script src="./js/fireworks.min.js"></script>
+<script src="./lib/moment.js"></script>
+<script src="./lib/moment-timezone-with-data.js"></script>
+<script src="./lib/amlich-ntt.js"></script>
+<script src="./lib/soon.min.js" data-auto="false"></script>
+<script src="./lib/jquery.lettering.js"></script>
+<script src="./lib/jquery.textillate.js"></script>
+<script src="./js/music.js"></script>
+<script src="./js/home.js"></script>
+
+</html>
